@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.types.RedisClientInfo;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -124,7 +125,7 @@ public class RedisOperationByNormal implements RedisOperation {
     }
 
     @Override
-    public List<String> lrangeAndLTrim(String topic, int maxGet) {
+    public List<String> lrangeAndLTrim(String topic, int maxGet) throws IOException {
         return null;
     }
 

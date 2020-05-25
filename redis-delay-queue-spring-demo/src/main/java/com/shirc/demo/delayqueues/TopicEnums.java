@@ -1,4 +1,4 @@
-package com.shirc.redisdelayqueuespringdemo.delayqueues;
+package com.shirc.demo.delayqueues;
 
 /**
  * @Description TODO

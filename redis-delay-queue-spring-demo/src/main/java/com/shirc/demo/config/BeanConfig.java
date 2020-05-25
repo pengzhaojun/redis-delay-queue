@@ -1,4 +1,4 @@
-package com.shirc.redisdelayqueuespringdemo.config;
+package com.shirc.demo.config;
 
 import com.shirc.redis.delay.queue.core.RedisDelayQueueContext;
 import com.shirc.redis.delay.queue.iface.RedisDelayQueue;
@@ -10,6 +10,8 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
+
 /**
  * @Description 接入Redis_Delay_Queue
  * @Author shirenchuang
@@ -19,7 +21,7 @@ import org.springframework.stereotype.Component;
 public class BeanConfig {
 
 
-
+    @Resource(name = "redisTemplate")
     private RedisTemplate redisTemplate;
 
 

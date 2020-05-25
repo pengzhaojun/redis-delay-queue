@@ -1,11 +1,9 @@
-package com.shirc.redisdelayqueuespringdemo.delayqueues;
+package com.shirc.demo.delayqueues;
 
+import com.shirc.demo.bo.MyArgs;
 import com.shirc.redis.delay.queue.iface.impl.AbstractTopicRegister;
-import com.shirc.redisdelayqueuespringdemo.bo.MyArgs;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;

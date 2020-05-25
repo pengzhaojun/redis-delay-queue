@@ -1,4 +1,5 @@
-package com.shirc.redisdelayqueuespringdemo.bo;
+package com.shirc.demo.bo;
+
 
 import com.shirc.redis.delay.queue.common.Args;
 

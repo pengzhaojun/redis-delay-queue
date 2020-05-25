@@ -3,6 +3,7 @@ package com.shirc.redis.delay.queue.redis;
 import com.shirc.redis.delay.queue.common.Args;
 import org.springframework.data.redis.core.types.RedisClientInfo;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -68,7 +69,7 @@ public interface RedisOperation {
      * @param maxGet
      * @return
      */
-    List<String> lrangeAndLTrim(String topic,int maxGet);
+    List<String> lrangeAndLTrim(String topic,int maxGet) throws IOException;
 
     /**
      * 通过topicId获取Job内容
